@@ -1,0 +1,481 @@
+id,category,supplier,date,amount,cost_center,description
+1,17,10,2020-10-14,60890.34,PROD003,Software license fees
+2,7,13,2020-10-08,41082.4,LOG001,Purchase of casting materials item/service.
+3,20,3,2020-07-18,3533.42,RND001,Product quality testing
+4,6,16,2020-09-09,14099.91,LOG001,Purchase of rubber & polymers item/service.
+5,20,5,2020-12-20,30340.15,PROD001,Product quality testing
+6,18,19,2020-09-27,42228.17,PROD001,Factory maintenance services
+7,20,18,2020-09-01,20339.19,RND001,Product quality testing
+8,20,12,2020-10-01,73911.84,PROD002,Product quality testing
+9,16,3,2020-10-21,59242.54,RND001,Freight and logistics costs
+10,17,12,2020-10-01,34328.68,PROD001,Software license fees
+11,17,18,2020-09-02,22563.21,RND001,Software license fees
+12,10,1,2020-07-02,36669.45,LOG001,Purchase of brake pad & lining components item/service.
+13,6,13,2020-08-31,48132.83,IT002,Purchase of rubber & polymers item/service.
+14,17,19,2020-08-10,49999.98,LOG001,Software license fees
+15,18,19,2020-09-26,27505.19,PROD001,Factory maintenance services
+16,18,12,2020-12-10,21259.89,PROD002,Factory maintenance services
+17,16,11,2020-07-06,40488.08,IT001,Freight and logistics costs
+18,16,19,2020-11-08,45249.21,ADM001,Freight and logistics costs
+19,17,20,2020-12-12,11738.38,SALES001,Software license fees
+20,8,1,2020-11-20,46614.0,ADM002,Purchase of chemicals & fluids item/service.
+21,15,12,2020-08-03,27292.77,LOG001,CNC machining charges
+22,15,10,2020-12-18,33645.11,LOG001,CNC machining charges
+23,20,14,2020-12-14,62229.58,PROD003,Product quality testing
+24,18,19,2020-08-24,27221.36,LOG001,Factory maintenance services
+25,16,19,2020-11-08,66828.01,RND001,Freight and logistics costs
+26,17,15,2020-10-20,21369.05,PROD002,Software license fees
+27,9,8,2020-10-31,71469.06,RND001,Purchase of brake caliper sub-assemblies item/service.
+28,15,10,2020-08-02,4380.71,LOG001,CNC machining charges
+29,20,12,2020-08-06,35840.31,ADM002,Product quality testing
+30,9,8,2020-11-25,69219.66,SALES001,Purchase of brake caliper sub-assemblies item/service.
+31,11,8,2020-10-05,71427.09,RND001,Purchase of brake disc & drum components item/service.
+32,19,15,2020-10-04,72067.21,SALES001,Monthly electricity bill
+33,20,19,2020-12-25,64615.73,RND001,Product quality testing
+34,9,8,2020-11-19,74971.47,PROD001,Purchase of brake caliper sub-assemblies item/service.
+35,15,11,2020-08-14,12283.36,PROD002,CNC machining charges
+36,19,12,2020-12-25,72374.22,LOG001,Monthly electricity bill
+37,13,6,2020-09-10,18138.98,SALES001,Purchase of fasteners & hardware item/service.
+38,20,19,2020-09-04,56464.53,PROD001,Product quality testing
+39,17,18,2020-11-26,37114.82,RND001,Software license fees
+40,16,20,2020-11-14,48589.09,PROD003,Freight and logistics costs
+41,16,18,2020-10-03,48930.09,SALES001,Freight and logistics costs
+42,16,12,2020-12-10,71226.42,RND001,Freight and logistics costs
+43,13,16,2020-10-21,26230.91,ADM002,Purchase of fasteners & hardware item/service.
+44,17,5,2020-12-02,52903.27,ADM002,Software license fees
+45,20,10,2020-11-04,50830.83,ADM001,Product quality testing
+46,19,20,2020-11-16,55419.39,PROD003,Monthly electricity bill
+47,20,10,2020-10-29,57890.62,IT002,Product quality testing
+48,19,11,2020-12-24,36536.37,LOG001,Monthly electricity bill
+49,19,19,2020-08-03,74068.72,LOG001,Monthly electricity bill
+50,16,19,2020-07-19,61170.59,RND001,Freight and logistics costs
+51,9,14,2020-11-12,21159.94,RND001,Purchase of brake caliper sub-assemblies item/service.
+52,18,5,2020-09-16,861.1,LOG001,Factory maintenance services
+53,20,3,2020-10-17,44966.04,LOG001,Product quality testing
+54,20,3,2020-11-10,34627.4,ADM001,Product quality testing
+55,7,9,2020-09-14,45544.17,IT001,Purchase of casting materials item/service.
+56,15,20,2020-08-24,5266.41,IT001,CNC machining charges
+57,19,12,2020-08-26,69154.56,IT002,Monthly electricity bill
+58,5,16,2020-09-19,4763.75,ADM001,Purchase of steel alloys item/service.
+59,16,10,2020-11-02,15090.12,ADM002,Freight and logistics costs
+60,20,11,2020-09-08,20939.69,LOG001,Product quality testing
+61,19,18,2020-12-07,54494.75,IT001,Monthly electricity bill
+62,14,1,2020-10-26,41773.3,LOG001,Purchase of sensors & electronics item/service.
+63,15,19,2020-12-21,56974.07,RND001,CNC machining charges
+64,9,14,2020-11-14,45533.66,PROD003,Purchase of brake caliper sub-assemblies item/service.
+65,6,2,2020-11-05,71203.59,ADM002,Purchase of rubber & polymers item/service.
+66,11,4,2020-10-24,575.3,RND001,Purchase of brake disc & drum components item/service.
+67,16,5,2020-07-01,8907.13,PROD001,Freight and logistics costs
+68,20,16,2020-10-29,3094.82,RND001,Product quality testing
+69,15,14,2020-08-30,46257.08,PROD002,CNC machining charges
+70,17,20,2020-11-24,11952.46,PROD002,Software license fees
+71,20,18,2020-12-23,50254.32,ADM002,Product quality testing
+72,15,5,2020-11-20,33286.25,IT001,CNC machining charges
+73,12,6,2020-11-20,14660.24,LOG001,Purchase of hydraulic system parts item/service.
+74,14,8,2020-07-04,39095.96,RND001,Purchase of sensors & electronics item/service.
+75,20,15,2020-08-29,34883.44,PROD002,Product quality testing
+76,18,3,2020-08-08,21460.31,PROD003,Factory maintenance services
+77,17,3,2020-07-14,39370.8,PROD001,Software license fees
+78,15,5,2020-11-03,60494.89,SALES001,CNC machining charges
+79,19,19,2020-10-29,66520.46,IT001,Monthly electricity bill
+80,20,8,2020-10-13,57119.85,RND001,Product quality testing
+81,8,1,2021-02-17,36075.42,ADM001,Purchase of chemicals & fluids item/service.
+82,15,18,2021-08-30,52298.91,IT001,CNC machining charges
+83,20,19,2021-09-17,68373.41,SALES001,Product quality testing
+84,15,11,2021-04-29,68811.51,SALES001,CNC machining charges
+85,19,3,2021-11-23,8313.67,IT002,Monthly electricity bill
+86,20,10,2021-11-13,51673.59,RND001,Product quality testing
+87,18,11,2021-05-19,57150.59,SALES001,Factory maintenance services
+88,19,3,2021-12-06,50889.21,LOG001,Monthly electricity bill
+89,14,4,2021-09-25,18288.72,ADM002,Purchase of sensors & electronics item/service.
+90,15,6,2021-05-30,10468.3,PROD002,CNC machining charges
+91,20,12,2021-09-29,67822.66,PROD002,Product quality testing
+92,19,15,2021-12-19,47618.46,ADM001,Monthly electricity bill
+93,20,11,2021-11-29,15276.28,ADM001,Product quality testing
+94,19,20,2021-05-25,61347.49,PROD001,Monthly electricity bill
+95,9,7,2021-06-25,15337.16,RND001,Purchase of brake caliper sub-assemblies item/service.
+96,19,5,2021-02-06,15013.92,RND001,Monthly electricity bill
+97,16,10,2021-08-17,400.72,LOG001,Freight and logistics costs
+98,15,10,2021-07-30,65681.46,IT002,CNC machining charges
+99,18,20,2021-03-22,43373.71,SALES001,Factory maintenance services
+100,20,19,2021-05-18,66019.89,RND001,Product quality testing
+101,15,19,2021-06-08,63580.83,RND001,CNC machining charges
+102,15,4,2021-10-19,6994.92,PROD002,CNC machining charges
+103,19,10,2021-09-12,51778.91,RND001,Monthly electricity bill
+104,18,18,2021-03-05,72853.45,RND001,Factory maintenance services
+105,15,1,2021-07-07,67251.23,SALES001,CNC machining charges
+106,15,12,2021-04-16,44379.59,RND001,CNC machining charges
+107,12,8,2021-08-24,2952.83,IT002,Purchase of hydraulic system parts item/service.
+108,16,15,2021-09-20,36633.51,SALES001,Freight and logistics costs
+109,15,1,2021-11-03,34571.76,SALES001,CNC machining charges
+110,17,19,2021-12-23,10594.05,ADM002,Software license fees
+111,20,12,2021-08-06,13812.51,SALES001,Product quality testing
+112,17,19,2021-04-19,45250.8,IT002,Software license fees
+113,14,8,2021-01-25,53295.96,LOG001,Purchase of sensors & electronics item/service.
+114,18,3,2021-07-28,72716.73,PROD001,Factory maintenance services
+115,18,11,2021-05-30,59246.72,ADM001,Factory maintenance services
+116,15,5,2021-01-22,33082.18,SALES001,CNC machining charges
+117,9,4,2021-02-08,57932.8,RND001,Purchase of brake caliper sub-assemblies item/service.
+118,20,11,2021-06-26,27025.87,RND001,Product quality testing
+119,16,15,2021-05-31,57935.9,IT002,Freight and logistics costs
+120,15,20,2021-12-21,74437.23,SALES001,CNC machining charges
+121,5,1,2021-11-19,22380.18,LOG001,Purchase of steel alloys item/service.
+122,20,11,2021-07-30,50967.08,LOG001,Product quality testing
+123,17,12,2021-09-17,31382.44,ADM002,Software license fees
+124,11,17,2021-01-01,14413.6,ADM001,Purchase of brake disc & drum components item/service.
+125,17,3,2021-02-12,8999.92,RND001,Software license fees
+126,20,15,2021-08-19,24110.49,SALES001,Product quality testing
+127,11,6,2021-08-30,24067.16,ADM002,Purchase of brake disc & drum components item/service.
+128,16,10,2021-07-17,60481.96,PROD002,Freight and logistics costs
+129,18,11,2021-06-10,57391.89,LOG001,Factory maintenance services
+130,17,5,2021-10-08,28717.45,LOG001,Software license fees
+131,18,5,2021-03-24,36465.25,LOG001,Factory maintenance services
+132,20,15,2021-04-13,701.96,RND001,Product quality testing
+133,17,3,2021-05-07,38011.16,IT001,Software license fees
+134,20,3,2021-11-06,5356.49,LOG001,Product quality testing
+135,19,18,2021-01-17,37113.97,LOG001,Monthly electricity bill
+136,16,10,2021-10-03,40891.42,SALES001,Freight and logistics costs
+137,6,16,2021-03-24,15805.02,IT001,Purchase of rubber & polymers item/service.
+138,17,3,2021-12-31,70120.3,RND001,Software license fees
+139,16,10,2021-01-26,63617.03,PROD003,Freight and logistics costs
+140,12,1,2021-04-19,2432.84,SALES001,Purchase of hydraulic system parts item/service.
+141,18,11,2021-09-02,2492.0,PROD001,Factory maintenance services
+142,19,3,2021-01-12,19993.26,IT002,Monthly electricity bill
+143,19,18,2021-12-03,52320.55,LOG001,Monthly electricity bill
+144,15,19,2021-01-26,40012.09,IT001,CNC machining charges
+145,5,9,2021-01-04,11521.42,PROD002,Purchase of steel alloys item/service.
+146,17,12,2021-01-20,49049.14,RND001,Software license fees
+147,19,18,2021-10-09,2336.4,RND001,Monthly electricity bill
+148,15,19,2021-01-26,44019.2,IT001,CNC machining charges
+149,17,18,2021-09-16,28978.55,IT002,Software license fees
+150,19,11,2021-08-27,3760.5,PROD003,Monthly electricity bill
+151,20,15,2021-03-19,53149.41,SALES001,Product quality testing
+152,17,5,2021-03-03,50149.01,ADM001,Software license fees
+153,9,1,2021-07-14,10414.81,PROD001,Purchase of brake caliper sub-assemblies item/service.
+154,18,19,2021-07-29,947.85,SALES001,Factory maintenance services
+155,17,11,2021-06-30,38055.93,ADM001,Software license fees
+156,18,3,2021-11-14,38443.64,PROD003,Factory maintenance services
+157,18,15,2021-05-29,22219.26,RND001,Factory maintenance services
+158,18,12,2021-03-16,34872.82,SALES001,Factory maintenance services
+159,18,15,2021-11-25,25161.29,ADM001,Factory maintenance services
+160,15,3,2021-11-11,16706.1,PROD002,CNC machining charges
+161,5,1,2022-03-26,72088.54,ADM001,Purchase of steel alloys item/service.
+162,17,15,2022-11-30,68293.61,RND001,Software license fees
+163,17,20,2022-06-13,2955.01,SALES001,Software license fees
+164,17,15,2022-10-04,48108.79,LOG001,Software license fees
+165,14,1,2022-10-16,42463.35,ADM002,Purchase of sensors & electronics item/service.
+166,17,12,2022-02-27,68014.64,RND001,Software license fees
+167,19,20,2022-06-10,67771.38,ADM002,Monthly electricity bill
+168,15,11,2022-07-04,57409.57,IT001,CNC machining charges
+169,16,12,2022-12-01,72182.34,RND001,Freight and logistics costs
+170,8,17,2022-05-24,42107.04,LOG001,Purchase of chemicals & fluids item/service.
+171,10,14,2022-03-15,30740.61,IT001,Purchase of brake pad & lining components item/service.
+172,20,3,2022-08-13,63339.05,PROD003,Product quality testing
+173,11,14,2022-07-20,48428.68,RND001,Purchase of brake disc & drum components item/service.
+174,16,15,2022-08-18,74941.57,SALES001,Freight and logistics costs
+175,11,8,2022-07-11,33814.98,RND001,Purchase of brake disc & drum components item/service.
+176,17,12,2022-11-22,36878.26,IT001,Software license fees
+177,16,5,2022-11-22,17369.07,RND001,Freight and logistics costs
+178,19,3,2022-03-02,74584.76,PROD003,Monthly electricity bill
+179,5,14,2022-10-30,15569.03,PROD003,Purchase of steel alloys item/service.
+180,6,7,2022-06-17,49239.37,SALES001,Purchase of rubber & polymers item/service.
+181,18,15,2022-10-09,19918.86,LOG001,Factory maintenance services
+182,17,20,2022-11-29,29448.41,LOG001,Software license fees
+183,20,10,2022-06-21,13778.39,IT002,Product quality testing
+184,18,18,2022-05-08,49120.89,SALES001,Factory maintenance services
+185,17,12,2022-08-20,59541.12,PROD001,Software license fees
+186,18,20,2022-03-31,25110.09,PROD002,Factory maintenance services
+187,17,11,2022-07-29,63784.24,PROD003,Software license fees
+188,15,13,2022-11-01,72214.0,LOG001,CNC machining charges
+189,9,7,2022-05-03,71630.24,ADM001,Purchase of brake caliper sub-assemblies item/service.
+190,18,18,2022-12-16,55738.55,RND001,Factory maintenance services
+191,19,19,2022-05-29,4965.95,PROD001,Monthly electricity bill
+192,17,11,2022-06-04,194.41,LOG001,Software license fees
+193,15,4,2022-09-13,67825.06,PROD001,CNC machining charges
+194,10,17,2022-12-26,1994.54,IT001,Purchase of brake pad & lining components item/service.
+195,15,11,2022-06-13,50112.48,LOG001,CNC machining charges
+196,11,7,2022-08-20,24966.63,PROD003,Purchase of brake disc & drum components item/service.
+197,15,15,2022-08-11,23085.09,ADM002,CNC machining charges
+198,20,11,2022-03-11,21677.99,LOG001,Product quality testing
+199,10,8,2022-11-03,68046.02,ADM001,Purchase of brake pad & lining components item/service.
+200,18,18,2022-09-19,30109.48,LOG001,Factory maintenance services
+201,14,16,2022-10-14,50784.57,LOG001,Purchase of sensors & electronics item/service.
+202,7,2,2022-07-21,15873.71,RND001,Purchase of casting materials item/service.
+203,15,10,2022-07-16,44653.79,SALES001,CNC machining charges
+204,17,19,2022-05-04,42441.49,ADM001,Software license fees
+205,7,4,2022-12-06,37701.61,LOG001,Purchase of casting materials item/service.
+206,17,11,2022-04-22,207.61,SALES001,Software license fees
+207,17,15,2022-06-03,51029.85,RND001,Software license fees
+208,15,15,2022-05-02,50589.88,IT002,CNC machining charges
+209,15,6,2022-02-08,69583.2,RND001,CNC machining charges
+210,16,10,2022-09-02,49069.84,ADM001,Freight and logistics costs
+211,18,11,2022-11-26,64312.95,SALES001,Factory maintenance services
+212,15,1,2022-10-21,21770.66,SALES001,CNC machining charges
+213,20,5,2022-06-18,5382.34,PROD003,Product quality testing
+214,17,5,2022-12-30,43168.71,IT002,Software license fees
+215,20,20,2022-08-15,67068.59,IT002,Product quality testing
+216,8,16,2022-03-29,72204.59,LOG001,Purchase of chemicals & fluids item/service.
+217,16,3,2022-07-23,10131.22,SALES001,Freight and logistics costs
+218,20,10,2022-09-30,23668.77,ADM002,Product quality testing
+219,18,15,2022-04-26,22554.5,PROD001,Factory maintenance services
+220,20,19,2022-12-20,30976.01,SALES001,Product quality testing
+221,16,3,2022-10-16,32185.68,ADM001,Freight and logistics costs
+222,16,11,2022-11-19,24496.05,SALES001,Freight and logistics costs
+223,15,12,2022-03-08,28053.31,ADM002,CNC machining charges
+224,14,13,2022-11-09,3177.18,SALES001,Purchase of sensors & electronics item/service.
+225,15,20,2022-09-27,5579.85,SALES001,CNC machining charges
+226,18,12,2022-09-13,37169.0,RND001,Factory maintenance services
+227,19,12,2022-09-12,2001.76,ADM002,Monthly electricity bill
+228,17,10,2022-09-09,37396.04,LOG001,Software license fees
+229,16,15,2022-11-08,57322.64,SALES001,Freight and logistics costs
+230,9,2,2022-10-11,54164.75,PROD001,Purchase of brake caliper sub-assemblies item/service.
+231,15,9,2022-08-19,45527.82,SALES001,CNC machining charges
+232,18,15,2022-02-28,5649.53,LOG001,Factory maintenance services
+233,7,8,2022-01-07,62121.97,SALES001,Purchase of casting materials item/service.
+234,20,15,2022-03-24,18034.74,PROD003,Product quality testing
+235,5,13,2022-11-30,57877.4,PROD001,Purchase of steel alloys item/service.
+236,12,16,2022-02-21,39145.07,IT001,Purchase of hydraulic system parts item/service.
+237,20,11,2022-02-09,35455.84,SALES001,Product quality testing
+238,16,10,2022-05-06,5280.9,RND001,Freight and logistics costs
+239,7,13,2022-09-24,5673.79,RND001,Purchase of casting materials item/service.
+240,17,18,2022-05-30,67480.23,LOG001,Software license fees
+241,15,19,2023-07-08,27318.16,PROD001,CNC machining charges
+242,17,10,2023-12-09,17379.14,PROD003,Software license fees
+243,16,3,2023-07-23,52478.86,IT002,Freight and logistics costs
+244,16,5,2023-05-22,62348.21,IT001,Freight and logistics costs
+245,15,5,2023-07-16,18859.67,PROD001,CNC machining charges
+246,11,6,2023-12-06,5495.44,PROD002,Purchase of brake disc & drum components item/service.
+247,8,14,2023-05-08,9009.88,ADM002,Purchase of chemicals & fluids item/service.
+248,20,2,2023-12-21,22346.42,RND001,Product quality testing
+249,17,5,2023-04-15,71437.89,PROD001,Software license fees
+250,17,12,2023-05-06,70722.9,IT001,Software license fees
+251,14,13,2023-08-16,39454.24,PROD002,Purchase of sensors & electronics item/service.
+252,15,20,2023-10-31,63420.77,PROD002,CNC machining charges
+253,17,11,2023-09-22,55134.24,LOG001,Software license fees
+254,5,14,2023-12-21,40023.34,PROD002,Purchase of steel alloys item/service.
+255,16,5,2023-01-05,37167.29,IT002,Freight and logistics costs
+256,19,10,2023-09-06,44478.92,IT002,Monthly electricity bill
+257,15,3,2023-12-11,5709.96,ADM001,CNC machining charges
+258,17,15,2023-02-26,34325.12,RND001,Software license fees
+259,20,5,2023-03-17,28264.39,IT002,Product quality testing
+260,17,12,2023-02-04,14111.88,RND001,Software license fees
+261,14,7,2023-11-18,52209.75,RND001,Purchase of sensors & electronics item/service.
+262,20,11,2023-01-25,41848.63,SALES001,Product quality testing
+263,11,7,2023-07-17,72469.56,IT001,Purchase of brake disc & drum components item/service.
+264,17,10,2023-02-05,2437.77,ADM002,Software license fees
+265,20,11,2023-09-03,26712.48,PROD001,Product quality testing
+266,20,1,2023-03-03,65398.09,SALES001,Product quality testing
+267,10,17,2023-04-20,34747.62,PROD001,Purchase of brake pad & lining components item/service.
+268,17,19,2023-08-18,69386.25,LOG001,Software license fees
+269,11,6,2023-04-18,8052.77,SALES001,Purchase of brake disc & drum components item/service.
+270,20,20,2023-07-27,41178.11,ADM001,Product quality testing
+271,18,18,2023-02-16,44503.57,SALES001,Factory maintenance services
+272,14,8,2023-04-29,25840.69,LOG001,Purchase of sensors & electronics item/service.
+273,15,11,2023-12-02,51862.29,PROD002,CNC machining charges
+274,18,20,2023-09-21,51114.43,IT002,Factory maintenance services
+275,20,10,2023-07-13,43203.94,PROD003,Product quality testing
+276,20,10,2023-09-01,74421.09,IT001,Product quality testing
+277,5,13,2023-03-16,72924.51,IT001,Purchase of steel alloys item/service.
+278,17,20,2023-03-16,19733.02,IT001,Software license fees
+279,20,5,2023-08-08,27204.61,IT002,Product quality testing
+280,9,16,2023-01-01,41048.52,ADM001,Purchase of brake caliper sub-assemblies item/service.
+281,18,15,2023-12-27,7163.08,PROD003,Factory maintenance services
+282,15,9,2023-07-15,37967.02,IT001,CNC machining charges
+283,20,10,2023-01-24,56724.89,IT002,Product quality testing
+284,17,12,2023-07-11,63206.27,PROD001,Software license fees
+285,19,3,2023-06-27,46669.4,IT002,Monthly electricity bill
+286,15,19,2023-08-14,45000.01,RND001,CNC machining charges
+287,20,2,2023-01-24,7911.51,LOG001,Product quality testing
+288,15,12,2023-05-10,11466.52,ADM002,CNC machining charges
+289,16,18,2023-02-09,20819.27,IT001,Freight and logistics costs
+290,6,2,2023-12-17,34392.3,SALES001,Purchase of rubber & polymers item/service.
+291,15,19,2023-01-26,5973.72,ADM002,CNC machining charges
+292,15,20,2023-02-02,74012.6,IT001,CNC machining charges
+293,6,6,2023-11-18,20071.94,RND001,Purchase of rubber & polymers item/service.
+294,20,10,2023-12-03,18978.52,RND001,Product quality testing
+295,20,15,2023-10-17,15257.74,PROD001,Product quality testing
+296,15,7,2023-03-28,72251.51,RND001,CNC machining charges
+297,9,4,2023-11-07,18396.86,ADM002,Purchase of brake caliper sub-assemblies item/service.
+298,20,20,2023-01-25,71526.82,IT002,Product quality testing
+299,17,5,2023-09-09,20855.79,ADM001,Software license fees
+300,16,19,2023-12-22,20711.68,LOG001,Freight and logistics costs
+301,11,2,2023-08-01,7375.28,LOG001,Purchase of brake disc & drum components item/service.
+302,15,10,2023-11-12,28760.02,LOG001,CNC machining charges
+303,19,19,2023-02-18,21928.04,ADM002,Monthly electricity bill
+304,15,10,2023-11-28,28366.84,LOG001,CNC machining charges
+305,19,15,2023-06-27,47101.23,LOG001,Monthly electricity bill
+306,7,13,2023-11-04,64115.45,SALES001,Purchase of casting materials item/service.
+307,19,12,2023-07-20,31182.59,IT002,Monthly electricity bill
+308,13,17,2023-06-25,70783.68,ADM001,Purchase of fasteners & hardware item/service.
+309,5,16,2023-03-03,64297.18,ADM002,Purchase of steel alloys item/service.
+310,16,5,2023-03-07,18613.11,LOG001,Freight and logistics costs
+311,11,6,2023-04-25,55884.84,IT001,Purchase of brake disc & drum components item/service.
+312,15,11,2023-09-15,17903.5,IT001,CNC machining charges
+313,8,17,2023-07-11,55926.22,RND001,Purchase of chemicals & fluids item/service.
+314,6,2,2023-12-06,31238.61,SALES001,Purchase of rubber & polymers item/service.
+315,8,14,2023-04-25,68839.26,ADM002,Purchase of chemicals & fluids item/service.
+316,18,19,2023-11-21,47095.54,PROD003,Factory maintenance services
+317,19,10,2023-11-24,68214.79,RND001,Monthly electricity bill
+318,18,15,2023-09-11,59571.22,SALES001,Factory maintenance services
+319,10,4,2023-04-15,42290.06,PROD002,Purchase of brake pad & lining components item/service.
+320,13,17,2023-08-14,5190.54,RND001,Purchase of fasteners & hardware item/service.
+321,16,19,2024-12-17,68421.7,SALES001,Freight and logistics costs
+322,18,5,2024-09-07,43439.36,ADM002,Factory maintenance services
+323,8,2,2024-08-17,66867.83,IT001,Purchase of chemicals & fluids item/service.
+324,19,11,2024-04-21,10574.72,PROD003,Monthly electricity bill
+325,17,18,2024-03-01,26234.01,SALES001,Software license fees
+326,15,15,2024-09-17,50520.16,SALES001,CNC machining charges
+327,15,19,2024-02-11,73043.5,SALES001,CNC machining charges
+328,17,5,2024-08-26,72204.64,ADM002,Software license fees
+329,6,1,2024-11-06,20072.58,LOG001,Purchase of rubber & polymers item/service.
+330,16,19,2024-02-20,62426.11,IT001,Freight and logistics costs
+331,13,8,2024-09-13,55837.91,ADM002,Purchase of fasteners & hardware item/service.
+332,20,18,2024-08-09,46543.07,LOG001,Product quality testing
+333,16,15,2024-04-16,57739.8,SALES001,Freight and logistics costs
+334,19,11,2024-01-17,69228.39,ADM002,Monthly electricity bill
+335,17,19,2024-04-27,61634.92,SALES001,Software license fees
+336,18,18,2024-03-31,43134.55,RND001,Factory maintenance services
+337,18,18,2024-12-17,5008.25,RND001,Factory maintenance services
+338,19,5,2024-12-29,8225.76,IT001,Monthly electricity bill
+339,16,15,2024-02-14,13714.27,RND001,Freight and logistics costs
+340,13,9,2024-04-28,4339.57,ADM001,Purchase of fasteners & hardware item/service.
+341,17,11,2024-08-28,66725.04,SALES001,Software license fees
+342,19,19,2024-06-03,68547.29,PROD002,Monthly electricity bill
+343,17,18,2024-07-13,73389.04,SALES001,Software license fees
+344,17,12,2024-03-27,12927.77,IT001,Software license fees
+345,15,18,2024-02-04,3195.95,IT001,CNC machining charges
+346,9,14,2024-09-01,1730.67,LOG001,Purchase of brake caliper sub-assemblies item/service.
+347,19,5,2024-03-31,27765.61,SALES001,Monthly electricity bill
+348,9,4,2024-03-27,51463.44,SALES001,Purchase of brake caliper sub-assemblies item/service.
+349,18,3,2024-11-24,7742.82,SALES001,Factory maintenance services
+350,17,12,2024-09-09,50472.76,SALES001,Software license fees
+351,9,14,2024-08-31,66882.26,ADM001,Purchase of brake caliper sub-assemblies item/service.
+352,16,19,2024-04-04,58147.33,IT001,Freight and logistics costs
+353,18,19,2024-04-04,71599.35,SALES001,Factory maintenance services
+354,15,8,2024-03-28,66773.52,RND001,CNC machining charges
+355,14,7,2024-10-11,44975.31,PROD003,Purchase of sensors & electronics item/service.
+356,19,10,2024-05-20,48508.36,LOG001,Monthly electricity bill
+357,5,8,2024-09-06,39144.98,LOG001,Purchase of steel alloys item/service.
+358,17,5,2024-07-24,21747.51,RND001,Software license fees
+359,18,11,2024-08-23,42732.13,PROD001,Factory maintenance services
+360,16,11,2024-09-10,14016.24,RND001,Freight and logistics costs
+361,20,12,2024-05-13,70001.69,ADM001,Product quality testing
+362,17,15,2024-08-06,43777.62,RND001,Software license fees
+363,17,3,2024-12-08,46667.62,PROD001,Software license fees
+364,18,10,2024-11-07,9429.98,ADM001,Factory maintenance services
+365,20,15,2024-01-19,41703.06,LOG001,Product quality testing
+366,20,15,2024-01-15,10703.22,ADM002,Product quality testing
+367,8,9,2024-08-23,10402.43,PROD001,Purchase of chemicals & fluids item/service.
+368,15,19,2024-08-07,45279.31,LOG001,CNC machining charges
+369,19,20,2024-08-31,67752.66,ADM002,Monthly electricity bill
+370,18,20,2024-10-30,63938.37,RND001,Factory maintenance services
+371,18,5,2024-08-02,62906.51,ADM002,Factory maintenance services
+372,12,17,2024-12-28,15206.91,SALES001,Purchase of hydraulic system parts item/service.
+373,16,15,2024-12-25,53803.79,RND001,Freight and logistics costs
+374,15,6,2024-08-19,5036.91,SALES001,CNC machining charges
+375,16,18,2024-07-29,62142.83,PROD003,Freight and logistics costs
+376,15,3,2024-12-01,66449.13,LOG001,CNC machining charges
+377,13,7,2024-02-14,70758.62,LOG001,Purchase of fasteners & hardware item/service.
+378,19,19,2024-08-03,20385.59,IT001,Monthly electricity bill
+379,18,10,2024-05-15,15214.27,RND001,Factory maintenance services
+380,20,5,2024-06-17,5272.17,SALES001,Product quality testing
+381,15,11,2024-09-10,58788.29,IT001,CNC machining charges
+382,18,10,2024-10-25,73590.39,LOG001,Factory maintenance services
+383,20,9,2024-05-09,68539.45,ADM002,Product quality testing
+384,15,15,2024-05-12,64730.48,SALES001,CNC machining charges
+385,17,10,2024-12-05,50231.75,IT001,Software license fees
+386,16,19,2024-12-17,36805.15,IT001,Freight and logistics costs
+387,19,20,2024-09-09,36847.44,LOG001,Monthly electricity bill
+388,15,19,2024-03-13,7101.87,LOG001,CNC machining charges
+389,16,19,2024-03-15,15140.48,IT001,Freight and logistics costs
+390,14,7,2024-12-08,55049.88,IT001,Purchase of sensors & electronics item/service.
+391,16,15,2024-04-10,38106.79,ADM001,Freight and logistics costs
+392,18,18,2024-03-22,64513.96,IT001,Factory maintenance services
+393,5,7,2024-05-23,67929.56,SALES001,Purchase of steel alloys item/service.
+394,20,18,2024-02-03,26085.21,SALES001,Product quality testing
+395,17,19,2024-08-20,1922.26,LOG001,Software license fees
+396,20,20,2024-10-13,4228.92,ADM002,Product quality testing
+397,19,18,2024-08-25,2514.17,SALES001,Monthly electricity bill
+398,8,4,2024-09-09,65839.82,IT002,Purchase of chemicals & fluids item/service.
+399,16,19,2024-01-17,20138.3,SALES001,Freight and logistics costs
+400,19,5,2024-04-16,73413.04,ADM002,Monthly electricity bill
+401,15,12,2025-03-31,8141.29,ADM001,CNC machining charges
+402,16,20,2025-02-26,5486.4,RND001,Freight and logistics costs
+403,18,18,2025-02-16,46533.97,IT002,Factory maintenance services
+404,17,10,2025-03-10,45023.86,PROD002,Software license fees
+405,19,18,2025-02-10,18627.83,RND001,Monthly electricity bill
+406,8,6,2025-03-12,58508.74,RND001,Purchase of chemicals & fluids item/service.
+407,10,16,2025-01-23,37748.53,IT001,Purchase of brake pad & lining components item/service.
+408,19,19,2025-05-27,71635.57,ADM001,Monthly electricity bill
+409,12,1,2025-03-02,51818.98,ADM001,Purchase of hydraulic system parts item/service.
+410,16,5,2025-03-31,62410.49,RND001,Freight and logistics costs
+411,20,6,2025-02-18,41078.26,LOG001,Product quality testing
+412,20,5,2025-02-03,27917.99,ADM002,Product quality testing
+413,10,1,2025-04-03,33265.37,SALES001,Purchase of brake pad & lining components item/service.
+414,18,18,2025-03-28,60753.34,LOG001,Factory maintenance services
+415,17,18,2025-02-01,72403.89,ADM001,Software license fees
+416,17,10,2025-06-22,27653.75,IT002,Software license fees
+417,17,19,2025-02-12,6790.99,IT001,Software license fees
+418,16,20,2025-04-13,37560.25,ADM001,Freight and logistics costs
+419,19,11,2025-06-03,23073.42,ADM002,Monthly electricity bill
+420,17,20,2025-06-11,62956.36,ADM001,Software license fees
+421,16,18,2025-06-04,36125.2,ADM002,Freight and logistics costs
+422,9,1,2025-02-24,13886.37,RND001,Purchase of brake caliper sub-assemblies item/service.
+423,18,19,2025-04-22,40955.17,ADM002,Factory maintenance services
+424,11,2,2025-04-16,9278.95,RND001,Purchase of brake disc & drum components item/service.
+425,18,10,2025-01-11,11004.28,ADM002,Factory maintenance services
+426,20,5,2025-06-16,20749.87,SALES001,Product quality testing
+427,9,6,2025-05-24,12367.29,LOG001,Purchase of brake caliper sub-assemblies item/service.
+428,17,3,2025-01-08,1371.99,IT001,Software license fees
+429,12,7,2025-02-03,48812.4,LOG001,Purchase of hydraulic system parts item/service.
+430,17,20,2025-05-06,26398.23,IT001,Software license fees
+431,17,10,2025-01-25,67673.06,ADM002,Software license fees
+432,20,3,2025-05-16,12244.17,RND001,Product quality testing
+433,20,19,2025-02-03,6833.34,LOG001,Product quality testing
+434,10,1,2025-02-20,57641.22,ADM002,Purchase of brake pad & lining components item/service.
+435,20,12,2025-03-04,44487.79,IT001,Product quality testing
+436,20,15,2025-05-15,25314.42,SALES001,Product quality testing
+437,19,15,2025-02-15,43119.22,SALES001,Monthly electricity bill
+438,11,8,2025-05-08,31596.93,SALES001,Purchase of brake disc & drum components item/service.
+439,15,19,2025-05-19,13504.95,PROD002,CNC machining charges
+440,19,20,2025-04-03,24860.7,LOG001,Monthly electricity bill
+441,19,10,2025-02-07,54175.22,ADM001,Monthly electricity bill
+442,5,4,2025-02-03,40660.73,RND001,Purchase of steel alloys item/service.
+443,18,3,2025-05-18,46509.37,PROD001,Factory maintenance services
+444,14,1,2025-04-04,44272.4,PROD001,Purchase of sensors & electronics item/service.
+445,15,4,2025-04-23,44460.62,SALES001,CNC machining charges
+446,10,17,2025-04-28,23316.61,ADM002,Purchase of brake pad & lining components item/service.
+447,20,10,2025-05-12,56336.26,ADM001,Product quality testing
+448,15,9,2025-02-01,27221.13,LOG001,CNC machining charges
+449,16,12,2025-06-24,3481.46,IT002,Freight and logistics costs
+450,8,16,2025-01-22,68485.57,IT002,Purchase of chemicals & fluids item/service.
+451,18,19,2025-06-07,64413.13,PROD002,Factory maintenance services
+452,17,19,2025-05-10,12640.82,SALES001,Software license fees
+453,18,18,2025-06-17,13844.09,ADM002,Factory maintenance services
+454,16,18,2025-02-11,54646.78,ADM001,Freight and logistics costs
+455,17,5,2025-05-25,32731.63,SALES001,Software license fees
+456,20,20,2025-06-14,20137.78,IT002,Product quality testing
+457,19,15,2025-02-13,38997.86,ADM001,Monthly electricity bill
+458,16,10,2025-05-25,8102.88,RND001,Freight and logistics costs
+459,14,16,2025-01-03,2376.85,LOG001,Purchase of sensors & electronics item/service.
+460,15,10,2025-02-28,58357.93,LOG001,CNC machining charges
+461,15,5,2025-02-18,27582.33,ADM001,CNC machining charges
+462,20,16,2025-06-24,65426.75,LOG001,Product quality testing
+463,6,17,2025-05-21,63246.38,IT001,Purchase of rubber & polymers item/service.
+464,15,20,2025-05-30,61758.25,PROD001,CNC machining charges
+465,16,15,2025-05-03,50269.6,SALES001,Freight and logistics costs
+466,18,15,2025-04-05,55682.09,RND001,Factory maintenance services
+467,15,7,2025-04-19,18425.0,IT001,CNC machining charges
+468,14,13,2025-05-20,42066.43,PROD002,Purchase of sensors & electronics item/service.
+469,19,15,2025-01-29,30871.85,SALES001,Monthly electricity bill
+470,15,11,2025-02-14,21658.52,ADM002,CNC machining charges
+471,17,11,2025-05-03,33932.82,SALES001,Software license fees
+472,10,6,2025-04-07,72343.77,LOG001,Purchase of brake pad & lining components item/service.
+473,19,19,2025-02-14,43129.47,RND001,Monthly electricity bill
+474,20,14,2025-03-11,71544.79,SALES001,Product quality testing
+475,17,12,2025-02-12,20571.8,PROD002,Software license fees
+476,7,7,2025-03-04,47581.23,IT002,Purchase of casting materials item/service.
+477,20,12,2025-04-04,44546.41,IT001,Product quality testing
+478,17,18,2025-01-15,72676.11,SALES001,Software license fees
+479,20,12,2025-05-27,17105.77,PROD001,Product quality testing
+480,19,10,2025-01-31,36497.19,SALES001,Monthly electricity bill

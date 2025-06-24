@@ -76,14 +76,17 @@ WSGI_APPLICATION = 'procurement_analytics.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'spend_analytics',
-        'USER': 'postgres',  # or your actual user
-        'PASSWORD': 'huddar',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 'procurement_analytics_db',  # The name of the database you created
+        'USER': 'varuni',                     # Your PostgreSQL username
+        'PASSWORD': 'huddar',                 # The password you used 'huddar'
+        'HOST': 'localhost',                  # Or the IP address of your PostgreSQL server
+        'PORT': '5432',                       # Default PostgreSQL port
     }
 }
-
+# Redirect to the data home page after successful login
+LOGIN_REDIRECT_URL = '/data/'
+# Optional: redirect to login after logout
+LOGOUT_REDIRECT_URL = '/login/'
 
 
 # Password validation

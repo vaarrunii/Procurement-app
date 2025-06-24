@@ -1,0 +1,28 @@
+# Python specific
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.pytest_cache/
+instance/
+htmlcov/
+.mypy_cache/
+.vscode/  # VS Code specific workspace settings (optional)
+
+# Django specific
+*.log
+*.pot
+*.mo
+# *.sqlite3 # Uncomment if you use SQLite; if only PostgreSQL, you don't need this line
+media/    # User-uploaded files (if not meant for version control)
+static_cdn/ # Collected static files for production
+staticfiles/ # Collected static files if using collectstatic output directory
+.env      # Environment variables file (contains sensitive info)
+/local_settings.py # If you use a separate local settings file for sensitive data

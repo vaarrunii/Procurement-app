@@ -1,0 +1,21 @@
+id,name,contact_email,phone,address,gstin,pan,score,type,is_active,share_of_business,lead_time_days,base_currency,unit_of_measure
+1,Steel Dynamics Inc.,contact@steel-dynamics.com,9815848158,"456 Industrial Rd, Chennai",27ABCDE3010F1Z4,ABCDE1777O,8.3,Direct,True,0.16,18,USD,PCS
+2,RubberPro Components,contact@rubberpro.com,9880503310,"134 Industrial Rd, Gurgaon",27ABCDE3025F2Z4,ABCDE3818D,8.4,Direct,True,0.02,34,EUR,SERVICE
+3,Hydraulic Solutions Ltd.,contact@hydraulicsol.com,9886260560,"791 Industrial Rd, Gurgaon",27ABCDE5626F9Z5,ABCDE2814R,8.7,Indirect,True,0.19,16,USD,SERVICE
+4,Logistics Express Pvt. Ltd.,contact@logisticsexp.com,9898915266,"902 Industrial Rd, Bangalore",27ABCDE9309F9Z4,ABCDE7826Y,9.2,Direct,True,0.06,7,EUR,UNIT
+5,Office Supply Co.,contact@officesupply.com,9822529409,"151 Industrial Rd, Gurgaon",27ABCDE2277F3Z2,ABCDE6205H,9.2,Indirect,True,0.21,35,INR,UNIT
+6,Precision Machining Works,contact@precisionmachining.com,9822410822,"780 Industrial Rd, Chennai",27ABCDE4579F3Z2,ABCDE8499D,7.7,Direct,True,0.11,24,USD,KG
+7,Global Fasteners Inc.,contact@globalfasteners.com,9849954604,"936 Industrial Rd, Pune",27ABCDE4868F9Z5,ABCDE2629Z,7.3,Direct,True,0.13,17,EUR,METER
+8,IT Solutions India,contact@itsolutions.in,9878486070,"128 Industrial Rd, Pune",27ABCDE9022F3Z3,ABCDE5787Q,7.2,Direct,True,0.24,23,INR,PCS
+9,Cleaning Services Pvt. Ltd.,contact@cleaningservices.com,9862393035,"688 Industrial Rd, Bangalore",27ABCDE6047F1Z4,ABCDE3100Z,8.9,Direct,True,0.26,23,USD,PCS
+10,PowerGen Energy Solutions,contact@powergen.com,9875826024,"144 Industrial Rd, Chennai",27ABCDE7371F7Z3,ABCDE3440U,8.5,Indirect,True,0.12,43,USD,KG
+11,Brake Material Innovators,contact@brakeinnovators.com,9817598333,"908 Industrial Rd, Bangalore",27ABCDE3930F5Z6,ABCDE3473G,9.5,Indirect,True,0.06,6,INR,METER
+12,Advanced Casting Corp.,contact@advancedcasting.com,9892590049,"717 Industrial Rd, Chennai",27ABCDE5477F8Z9,ABCDE4234Q,8.3,Indirect,True,0.2,33,INR,PCS
+13,Sensor Tech Global,contact@sensortech.com,9817242413,"146 Industrial Rd, Gurgaon",27ABCDE3427F1Z2,ABCDE5319A,9.5,Direct,True,0.03,37,EUR,KG
+14,Bearing Dynamics Corp.,contact@bearingdynamics.com,9844208345,"104 Industrial Rd, Pune",27ABCDE1388F4Z6,ABCDE8597T,7.6,Direct,True,0.16,27,EUR,UNIT
+15,Elastomer Seals Inc.,contact@elastomerseals.com,9831015224,"897 Industrial Rd, Gurgaon",27ABCDE7446F9Z9,ABCDE5289J,9.1,Indirect,True,0.28,14,EUR,SERVICE
+16,Metal Fab Solutions,contact@metalfab.com,9884705493,"697 Industrial Rd, Pune",27ABCDE4706F5Z0,ABCDE7106L,8.3,Direct,True,0.25,30,USD,SERVICE
+17,Tool & Die Specialists,contact@toolanddie.com,9894637266,"719 Industrial Rd, Bangalore",27ABCDE3579F3Z6,ABCDE3477A,7.3,Direct,True,0.19,9,USD,UNIT
+18,Chemicals Unlimited,contact@chemicalsunlimited.com,9898216890,"410 Industrial Rd, Gurgaon",27ABCDE9339F8Z3,ABCDE9161Y,9.2,Indirect,True,0.08,17,INR,METER
+19,Packaging Pro Solutions,contact@packagingpro.com,9885551795,"575 Industrial Rd, Gurgaon",27ABCDE5061F8Z1,ABCDE7044C,8.5,Indirect,True,0.28,14,EUR,KG
+20,Security Services Co.,contact@securityco.com,9874835480,"664 Industrial Rd, Bangalore",27ABCDE1015F1Z2,ABCDE1808K,8.6,Indirect,True,0.05,43,INR,KG

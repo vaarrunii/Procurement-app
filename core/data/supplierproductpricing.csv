@@ -1,0 +1,101 @@
+id,supplier,product_name,price,currency,unit_of_measure
+1,14,Brake Caliper Bleeder Valve Cap,4150.09,UNIT,PCS
+2,8,Vacuum Hose (Brake Booster),2050.21,PCS,METER
+3,6,Brake Light Switch,20819.73,KG,PCS
+4,16,Parking Brake Cable Assembly,21911.95,SERVICE,PCS
+5,4,Differential Oil Seal,7126.89,UNIT,PCS
+6,1,Vacuum Hose (Brake Booster),8429.96,PCS,METER
+7,17,Wheel Bearing Unit (Front Axle),12504.77,UNIT,PCS
+8,9,Factory Floor Cleaning Chemicals,8109.7,PCS,LITRE
+9,14,Energy Audit Services,7192.96,UNIT,SERVICE
+10,14,EPDM Rubber Granules (Seal Grade),18645.19,UNIT,KG
+11,6,DOT4 Brake Fluid Base Stock,155.27,KG,LITRE
+12,4,Caliper Guide Pin (Stainless Steel),23267.81,UNIT,KG
+13,14,Assembly Line Conveyor Belt,11652.21,UNIT,PCS
+14,4,Wheel Stud (M12x1.5),11249.25,UNIT,PCS
+15,1,Welding Electrodes (E7018),19610.39,PCS,PCS
+16,4,Grinding Discs (4.5 inch),13264.57,UNIT,PCS
+17,1,Caliper Piston Seal Kit,1749.72,PCS,PCS
+18,4,Welding Electrodes (E7018),17705.54,UNIT,PCS
+19,16,Brake Pad Shim Kit,5833.23,SERVICE,PCS
+20,17,Brake Master Cylinder Assembly,1098.16,UNIT,PCS
+21,14,Brake Caliper Piston (Phenolic),1818.72,UNIT,PCS
+22,9,Brake Caliper Housing (Front Right),13223.85,PCS,PCS
+23,1,Brake Master Cylinder Assembly,4833.87,PCS,PCS
+24,9,Brake Caliper Housing (Front Left),15580.93,PCS,PCS
+25,8,Heat Treatment Services (Quenching),13949.04,PCS,SERVICE
+26,14,Return Spring Kit (Drum Brake),1613.51,UNIT,PCS
+27,1,Powder Coating Service (Black),373.47,PCS,SERVICE
+28,2,Welding Electrodes (E7018),8433.43,SERVICE,PCS
+29,16,Cybersecurity Consulting Service,1700.38,SERVICE,SERVICE
+30,14,Assembly Line Conveyor Belt,22909.46,UNIT,PCS
+31,6,Assembly Line Conveyor Belt,12168.83,KG,PCS
+32,1,Ceramic Brake Pad Friction Material Mix,14464.61,PCS,KG
+33,1,Silicon Carbide Abrasives (Grinding),3963.37,PCS,PCS
+34,17,Lug Nut (M12x1.5),17638.22,UNIT,PCS
+35,2,Brake Booster Diaphragm,24452.1,SERVICE,PCS
+36,6,Brake Rotor Hat (Aluminum),16308.7,KG,PCS
+37,7,Parking Brake Cable Assembly,2364.45,METER,PCS
+38,2,Brake Caliper Housing (Front Right),7410.34,SERVICE,PCS
+39,9,Brake Caliper Piston (Phenolic),2838.15,PCS,PCS
+40,4,Brake Light Switch,9910.36,UNIT,PCS
+41,1,ERP Software License (Annual),16433.37,PCS,PCS
+42,7,Bleeder Screw (M10x1.0),6835.06,METER,PCS
+43,1,CNC Machining Oil,6942.12,PCS,PCS
+44,8,Brake Fluid Reservoir,9234.32,PCS,LITRE
+45,9,Nitrile Gloves (Industrial),11792.3,PCS,PCS
+46,14,Ductile Iron Ingots (Rear Drum),19346.99,UNIT,KG
+47,6,Brake Pad Retainer Spring,1769.68,KG,PCS
+48,6,Brake Disc Casting (Ventilated),8630.79,KG,PCS
+49,4,Protective Eyewear,3222.92,UNIT,PCS
+50,9,Brake Pad Shim Kit,17888.32,PCS,PCS
+51,9,Assembly Line Conveyor Belt,20415.09,PCS,PCS
+52,1,Semi-Metallic Brake Pad Friction Material Mix,8172.31,PCS,KG
+53,17,Stretch Wrap Film,20289.71,UNIT,PCS
+54,2,High Carbon Steel Blanks (Front Disc),1270.67,SERVICE,KG
+55,8,Axle Nut (Self-Locking),13372.55,PCS,PCS
+56,14,Brake Cleaner Spray (Non-Chlorinated),11370.19,UNIT,PCS
+57,9,Dust Boot (Caliper Pin),22919.34,PCS,PCS
+58,17,CNC Machining Oil,18307.5,UNIT,PCS
+59,4,Spindle Nut Washer,5651.98,UNIT,PCS
+60,14,ERP Software License (Annual),20604.28,UNIT,PCS
+61,6,DOT4 Brake Fluid Base Stock,19073.17,KG,LITRE
+62,17,Brake Pad Backing Plates (Ceramic),770.42,UNIT,PCS
+63,16,Powder Coating Service (Black),5811.29,SERVICE,SERVICE
+64,16,Dust Boot (Caliper Pin),21733.71,SERVICE,PCS
+65,13,Brake Pedal Assembly Sensor,14749.85,KG,PCS
+66,6,Brake Pad Backing Plates (Ceramic),8811.6,KG,PCS
+67,6,EPDM Rubber Granules (Seal Grade),17982.53,KG,KG
+68,7,ERP Software License (Annual),21841.65,METER,PCS
+69,7,Brake Caliper Piston (Phenolic),20517.72,METER,PCS
+70,14,Anti-Rattle Clip (Brake Pad),20209.93,UNIT,PCS
+71,7,CNC Machining Oil,1168.19,METER,PCS
+72,6,"Pallets (Wooden, Standard)",9854.49,KG,PCS
+73,13,Brake Rotor Hat (Aluminum),13348.5,KG,PCS
+74,7,Energy Audit Services,7189.47,METER,SERVICE
+75,1,Brake Light Switch,341.83,PCS,PCS
+76,1,Brake Pad Retainer Spring,24883.13,PCS,PCS
+77,2,Propulsion Shaft Flange,5767.52,SERVICE,PCS
+78,2,"Copper Brake Line Tubing (1/4"")",11170.71,SERVICE,METER
+79,9,Caliper Piston Seal Kit,13733.29,PCS,PCS
+80,6,Silicon Carbide Abrasives (Grinding),21781.04,KG,PCS
+81,17,Axle Nut (Self-Locking),2235.77,UNIT,PCS
+82,1,Forklift Maintenance Service,12062.78,PCS,SERVICE
+83,16,Waste Disposal Services (Hazardous),7560.39,SERVICE,SERVICE
+84,17,Wheel Bearing Unit (Front Axle),24043.57,UNIT,PCS
+85,6,Brake Booster Diaphragm,614.2,KG,PCS
+86,14,Dust Boot (Caliper Pin),11349.77,UNIT,PCS
+87,16,Brake Pedal Assembly Sensor,7351.8,SERVICE,PCS
+88,14,Dust Boot (Caliper Pin),13194.54,UNIT,PCS
+89,9,Forklift Maintenance Service,14096.56,PCS,SERVICE
+90,7,Factory Floor Cleaning Chemicals,5381.57,METER,LITRE
+91,8,Vacuum Hose (Brake Booster),13583.08,PCS,METER
+92,9,Ceramic Brake Pad Friction Material Mix,12560.73,PCS,KG
+93,14,Differential Oil Seal,16129.04,UNIT,PCS
+94,17,Degreaser (Industrial Strength),17665.43,UNIT,PCS
+95,2,Degreaser (Industrial Strength),21363.43,SERVICE,PCS
+96,1,Brake Pad Backing Plates (Ceramic),12653.9,PCS,PCS
+97,1,Dust Boot (Caliper Pin),4975.5,PCS,PCS
+98,6,Wheel Bearing Unit (Front Axle),22437.74,KG,PCS
+99,2,Caliper Hardware Kit,21560.36,SERVICE,PCS
+100,14,Heat Treatment Services (Quenching),18217.21,UNIT,SERVICE

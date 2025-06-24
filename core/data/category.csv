@@ -1,0 +1,21 @@
+id,name,parent
+1,Raw Materials,
+2,Components,
+3,Services,
+4,Manufacturing Equipment,
+5,Steel Alloys,1
+6,Rubber & Polymers,1
+7,Casting Materials,1
+8,Chemicals & Fluids,1
+9,Brake Caliper Sub-Assemblies,2
+10,Brake Pad & Lining Components,2
+11,Brake Disc & Drum Components,2
+12,Hydraulic System Parts,2
+13,Fasteners & Hardware,2
+14,Sensors & Electronics,2
+15,Machining & Fabrication,3
+16,Logistics & Shipping,3
+17,IT & Software Services,3
+18,Facility Maintenance,3
+19,Utilities,3
+20,Testing & Certification,3
