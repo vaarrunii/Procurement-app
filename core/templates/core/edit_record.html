@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Edit {{ model_name }} Record{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Edit {{ model_name }} Record (ID: {{ record_id }})</h1>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-dark text-white"> {# Changed to bg-dark #}
+            <h5 class="mb-0">Edit Form - Placeholder</h5>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info" role="alert"> {# Changed to alert-info #}
+                This is a placeholder for the edit form. You will implement the actual form here using Django Forms.
+                <br>
+                For now, here are the current record details:
+            </div>
+            <pre class="bg-light p-3 rounded border text-secondary">{{ instance }}</pre> {# text-secondary for instance #}
+            <p class="mt-3 text-muted">Example: <code>&lt;form method="post" class="mt-4"&gt;{% csrf_token %}{{ form.as_p }}&lt;button type="submit" class="btn btn-success"&gt;Save Changes&lt;/button&gt;&lt;/form&gt;</code></p>
+        </div>
+    </div>
+
+    <a href="javascript:history.back()" class="btn btn-secondary mt-3">Back to List</a>
+
+{% endblock %}

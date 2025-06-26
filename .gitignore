@@ -1,28 +1,39 @@
-# Python specific
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyd
 *.pyo
+
+# C extensions
+*.so
+
+# Distribution / packaging
 .Python
 env/
-venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.pytest_cache/
-instance/
-htmlcov/
-.mypy_cache/
-.vscode/  # VS Code specific workspace settings (optional)
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+.env/ # Your virtual environment
+venv/ # Another common virtual environment name
+.venv/ # Another common virtual environment name
 
-# Django specific
+# Django stuff:
 *.log
 *.pot
 *.mo
-# *.sqlite3 # Uncomment if you use SQLite; if only PostgreSQL, you don't need this line
-media/    # User-uploaded files (if not meant for version control)
-static_cdn/ # Collected static files for production
-staticfiles/ # Collected static files if using collectstatic output directory
-.env      # Environment variables file (contains sensitive info)
-/local_settings.py # If you use a separate local settings file for sensitive data
+*.sqlite3 # If you use SQLite for development, this keeps your db out of git
+media/ # User-uploaded media files (if applicable)
+
+# IDEs
+.idea/ # PyCharm project files
+.vscode/ # VS Code project files
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store # macOS
+.Trashes # macOS
+Thumbs.db # Windows

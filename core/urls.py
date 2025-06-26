@@ -1,26 +1,31 @@
 # core/urls.py
+
 from django.urls import path
 from . import views
+from django.contrib.auth import views as auth_views # Import Django's auth views for logout
 
 urlpatterns = [
-    # New URL for Excel export - make sure it's before specific data paths to avoid conflicts
-    path('export/excel/<str:model_name>/', views.export_model_excel, name='export_model_excel'),
+    path('', views.data_home, name='data_home'),
+    path('summary/', views.summary_page, name='summary_page'), # KEEP THIS
 
-    # Main data and summary pages
-    path('data/', views.data_home, name='data_home'),
-    path('summary/', views.summary_page, name='summary_page'),
+    # Data listing URLs
+    path('suppliers/', views.supplier_list, name='supplier_list'),
+    path('categories/', views.category_list, name='category_list'),
+    path('purchase-orders/', views.purchase_order_list, name='purchase_order_list'),
+    path('invoices/', views.invoice_list, name='invoice_list'),
+    path('spend-entries/', views.spend_entry_list, name='spend_entry_list'),
+    path('supplier-product-pricing/', views.supplier_product_pricing_list, name='supplier_product_pricing_list'),
+    path('supplier-contracts/', views.supplier_contract_list, name='supplier_contract_list'),
+    path('supplier-discounts/', views.supplier_discount_list, name='supplier_discount_list'),
+    path('alternate-suppliers/', views.alternate_supplier_list, name='alternate_supplier_list'),
 
-    # Sub-pages for each loaded data type
-    path('data/suppliers/', views.supplier_list, name='supplier_list'),
-    path('data/categories/', views.category_list, name='category_list'),
-    path('data/purchase-orders/', views.purchase_order_list, name='purchase_order_list'),
-    path('data/invoices/', views.invoice_list, name='invoice_list'),
-    path('data/spend-entries/', views.spend_entry_list, name='spend_entry_list'),
-    path('data/product-pricing/', views.supplier_product_pricing_list, name='supplier_product_pricing_list'),
-    path('data/contracts/', views.supplier_contract_list, name='supplier_contract_list'),
-    path('data/discounts/', views.supplier_discount_list, name='supplier_discount_list'),
-    path('data/alternate-suppliers/', views.alternate_supplier_list, name='alternate_supplier_list'),
+    # Export URLs
+    path('export/<str:model_name>/', views.export_model_excel, name='export_model_excel'),
 
-    # Redirects the root URL to the data home page after login
-    path('', views.data_home, name='home'),
+    # Edit and Delete URLs for each model
+    path('edit/<str:model_name>/<int:pk>/', views.edit_model_record, name='edit_model_record'),
+    path('delete/<str:model_name>/<int:pk>/', views.delete_model_record, name='delete_model_record'),
+
+    # Add a logout URL if you don't have one in your main urls.py
+    path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
 ]

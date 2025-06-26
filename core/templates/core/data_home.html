@@ -1,43 +1,41 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Data Home - Procurement Analytics{% endblock %}
+{% block title %}Home - Procurement App{% endblock %}
 
 {% block content %}
-<div class="card max-w-4xl mx-auto">
-    <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Procurement Data Overview</h1>
-
-    <p class="text-gray-600 mb-8 text-center">
-        Select a data category below to view detailed records, with filtering, sorting, and export capabilities.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a href="{% url 'supplier_list' %}" class="card flex items-center justify-center p-4 bg-blue-50 hover:bg-blue-100 transition duration-200 ease-in-out">
-            <span class="text-blue-700 font-semibold text-lg">Suppliers</span>
-        </a>
-        <a href="{% url 'category_list' %}" class="card flex items-center justify-center p-4 bg-green-50 hover:bg-green-100 transition duration-200 ease-in-out">
-            <span class="text-green-700 font-semibold text-lg">Categories</span>
-        </a>
-        <a href="{% url 'purchase_order_list' %}" class="card flex items-center justify-center p-4 bg-yellow-50 hover:bg-yellow-100 transition duration-200 ease-in-out">
-            <span class="text-yellow-700 font-semibold text-lg">Purchase Orders</span>
-        </a>
-        <a href="{% url 'invoice_list' %}" class="card flex items-center justify-center p-4 bg-red-50 hover:bg-red-100 transition duration-200 ease-in-out">
-            <span class="text-red-700 font-semibold text-lg">Invoices</span>
-        </a>
-        <a href="{% url 'spend_entry_list' %}" class="card flex items-center justify-center p-4 bg-purple-50 hover:bg-purple-100 transition duration-200 ease-in-out">
-            <span class="text-purple-700 font-semibold text-lg">Spend Entries</span>
-        </a>
-        <a href="{% url 'supplier_product_pricing_list' %}" class="card flex items-center justify-center p-4 bg-teal-50 hover:bg-teal-100 transition duration-200 ease-in-out">
-            <span class="text-teal-700 font-semibold text-lg">Product Pricing</span>
-        </a>
-        <a href="{% url 'supplier_contract_list' %}" class="card flex items-center justify-center p-4 bg-orange-50 hover:bg-orange-100 transition duration-200 ease-in-out">
-            <span class="text-orange-700 font-semibold text-lg">Contracts</span>
-        </a>
-        <a href="{% url 'supplier_discount_list' %}" class="card flex items-center justify-center p-4 bg-pink-50 hover:bg-pink-100 transition duration-200 ease-in-out">
-            <span class="text-pink-700 font-semibold text-lg">Discounts</span>
-        </a>
-        <a href="{% url 'alternate_supplier_list' %}" class="card flex items-center justify-center p-4 bg-indigo-50 hover:bg-indigo-100 transition duration-200 ease-in-out">
-            <span class="text-indigo-700 font-semibold text-lg">Alternate Suppliers</span>
-        </a>
+    <div class="card shadow-sm p-5 mb-5 text-center" style="max-width: 800px; margin: 0 auto;">
+        <div class="card-body">
+            <h1 class="display-5 mb-4 fw-bold">Welcome to the <span class="text-primary-alt">Procurement Dashboard</span></h1>
+            <p class="lead text-muted mb-4">
+                Access and manage your essential procurement data and analytics.
+            </p>
+            <hr class="my-4">
+            <p class="mb-4">
+                Select an option below to get started:
+            </p>
+            <div class="d-grid gap-3 col-md-8 mx-auto">
+                <a class="btn btn-primary-alt btn-lg" href="{% url 'supplier_list' %}" role="button">
+                    <i class="fas fa-table me-2"></i> View All Data Tables
+                </a>
+                <a class="btn btn-outline-secondary btn-lg" href="{% url 'summary_page' %}" role="button">
+                    <i class="fas fa-chart-bar me-2"></i> View Analytics Summary
+                </a>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="text-center mt-5">
+        <p class="text-muted small">© 2025 Procurement App. All rights reserved.</p>
+    </div>
+
+{% endblock %}
+
+{% block extra_js %}
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+    <script>
+        // If you don't have a Font Awesome kit, you can comment out the above line.
+        // The icons will simply not appear, but the buttons will still work.
+        // To get a kit, sign up at fontawesome.com. For this example, I've used placeholder icon classes.
+        // You can remove the <i> tags if you don't want to use Font Awesome.
+    </script>
 {% endblock %}

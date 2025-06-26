@@ -1,44 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ model_name|default:"Data Table" }}</title>
+{% extends 'core/base.html' %}
+{% load static %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+{% block title %}{{ model_name|default:"Data Table" }}{% endblock %}
 
-    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.bootstrap5.min.css" rel="stylesheet">
+{% block content %}
+    <h1 class="mb-4">{{ model_name|default:"Data" }}</h1>
 
-    <style>
-        body {
-            padding: 20px;
-        }
-        .container-fluid {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+    {# --- Basic Analytics Section --- #}
+    {% if analytics %}
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-secondary text-white"> {# Changed to bg-secondary #}
+            <h5 class="mb-0">{{ analytics.analytics_title|default:"Data Summary" }}</h5>
+        </div>
+        <div class="card-body">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                {% if analytics.total_records is not None %}
+                <div class="col">
+                    <div class="p-3 border rounded h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Records</h6>
+                        <p class="fs-4 fw-bold mb-0">{{ analytics.total_records }}</p>
+                    </div>
+                </div>
+                {% endif %}
 
-    <div class="container-fluid">
-        <h1 class="mb-4">{{ model_name|default:"Data" }}</h1>
+                {# Invoice specific analytics #}
+                {% if model_name == "Invoice Data" %}
+                <div class="col">
+                    <div class="p-3 border rounded border-danger-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Pending Invoices</h6>
+                        <p class="fs-4 fw-bold text-danger-alt mb-0">{{ analytics.total_pending|default:0 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-danger-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Sum Pending Amt.</h6>
+                        <p class="fs-4 fw-bold text-danger-alt mb-0">INR {{ analytics.sum_pending_amount|default:"0.00"|floatformat:2 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-success-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Paid Invoices</h6>
+                        <p class="fs-4 fw-bold text-success-alt mb-0">{{ analytics.total_paid|default:0 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-success-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Sum Paid Amt.</h6>
+                        <p class="fs-4 fw-bold text-success-alt mb-0">INR {{ analytics.sum_paid_amount|default:"0.00"|floatformat:2 }}</p>
+                    </div>
+                </div>
+                {% endif %}
 
-        <table id="dataTable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-            <thead>
-                <tr>
-                    </tr>
-            </thead>
-            <tbody>
-                </tbody>
-        </table>
+                {# Purchase Order specific analytics #}
+                {% if model_name == "Purchase Order Data" %}
+                <div class="col">
+                    <div class="p-3 border rounded border-danger-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Pending POs</h6>
+                        <p class="fs-4 fw-bold text-danger-alt mb-0">{{ analytics.total_pending|default:0 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-danger-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Sum Pending PO Amt.</h6>
+                        <p class="fs-4 fw-bold text-danger-alt mb-0">INR {{ analytics.sum_pending_amount|default:"0.00"|floatformat:2 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-success-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Approved POs</h6>
+                        <p class="fs-4 fw-bold text-success-alt mb-0">{{ analytics.total_approved|default:0 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-success-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Sum Approved PO Amt.</h6>
+                        <p class="fs-4 fw-bold text-success-alt mb-0">INR {{ analytics.sum_approved_amount|default:"0.00"|floatformat:2 }}</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                {# Spend Entry specific analytics #}
+                {% if model_name == "Spend Entry Data" %}
+                <div class="col">
+                    <div class="p-3 border rounded h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Total Spend Amount</h6>
+                        <p class="fs-4 fw-bold text-primary-alt mb-0">INR {{ analytics.total_spend_amount|default:"0.00"|floatformat:2 }}</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                {# Supplier specific analytics #}
+                {% if model_name == "Supplier Data" %}
+                <div class="col">
+                    <div class="p-3 border rounded border-success-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Active Suppliers</h6>
+                        <p class="fs-4 fw-bold text-success-alt mb-0">{{ analytics.active_suppliers|default:0 }}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border rounded border-danger-alt h-100 d-flex flex-column justify-content-between text-center">
+                        <h6 class="text-muted">Inactive Suppliers</h6>
+                        <p class="fs-4 fw-bold text-danger-alt mb-0">{{ analytics.inactive_suppliers|default:0 }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
     </div>
+    {% endif %}
+    {# --- End Basic Analytics Section --- #}
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-dark text-white">
+            <h5 class="mb-0">{{ model_name|default:"Data" }} Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="dataTable" class="table table-striped table-hover table-bordered dt-responsive nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            {% for field_name in fields %}
+                                <th>{{ field_name|cut:"_"|upper }}</th>
+                            {% endfor %}
+                            <th class="text-center">Actions</th> {# Center align actions header #}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                    <tfoot>
+                        <tr>
+                            {% for field_name in fields %}
+                                <th><input type="text" placeholder="Filter {{ field_name|cut:"_"|upper }}" class="form-control form-control-sm column-filter"/></th>
+                            {% endfor %}
+                            <th></th> {# Empty footer for actions column #}
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
+{% block extra_js %}
     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.min.js"></script>
 
@@ -50,75 +154,143 @@
     <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.print.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.colVis.min.js"></script>
+
     <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/3.0.2/js/responsive.bootstrap5.min.js"></script>
 
-
     {{ data|json_script:"data_json" }}
     {{ fields|json_script:"fields_json" }}
+    {{ url_model_name|json_script:"url_model_name_json" }}
 
     <script>
         $(document).ready(function() {
             let data = [];
             let fields = [];
+            let urlModelName = '';
 
             try {
                 const dataScript = document.getElementById('data_json');
                 if (dataScript && dataScript.textContent.trim()) {
                     data = JSON.parse(dataScript.textContent);
                 } else {
-                    console.warn("data_json script tag is empty or not found.");
+                    console.warn("'data_json' script tag is empty or not found. No data loaded.");
                 }
 
                 const fieldsScript = document.getElementById('fields_json');
                 if (fieldsScript && fieldsScript.textContent.trim()) {
                     fields = JSON.parse(fieldsScript.textContent);
                 } else {
-                    console.warn("fields_json script tag is empty or not found.");
+                    console.warn("'fields_json' script tag is empty or not found. Column headers might be affected.");
+                }
+
+                const urlModelNameScript = document.getElementById('url_model_name_json');
+                if (urlModelNameScript && urlModelNameScript.textContent.trim()) {
+                    urlModelName = JSON.parse(urlModelNameScript.textContent);
+                } else {
+                    console.warn("'url_model_name_json' script tag is empty or not found. Edit/Delete links may not work.");
                 }
 
             } catch (e) {
-                console.error("Error parsing JSON data or fields:", e);
-                console.error("Data JSON content:", document.getElementById('data_json') ? document.getElementById('data_json').textContent : "N/A");
-                console.error("Fields JSON content:", document.getElementById('fields_json') ? document.getElementById('fields_json').textContent : "N/A");
-                // Potentially display a user-friendly error message on the page
+                console.error("Error parsing JSON data or fields or url_model_name:", e);
                 $('#dataTable').html('<p class="text-danger">Error loading table data. Please check the console for details.</p>');
-                return; // Stop execution if critical data is missing/malformed
+                return;
             }
 
             // Create column definitions for DataTables
             const columnDefs = fields.map(field => ({
                 data: field,
-                title: field.replace(/_/g, ' ').toUpperCase() // Convert 'po_number' to 'PO NUMBER'
+                title: field.replace(/_/g, ' ').toUpperCase()
             }));
 
-            // Initialize DataTable
+            // Add the 'Actions' column
+            columnDefs.push({
+                data: null, // This column doesn't draw data from a specific field
+                title: 'Actions',
+                orderable: false, // Actions column typically not sortable
+                searchable: false, // Actions column typically not searchable
+                className: 'text-center', // Center align the content of this column
+                render: function(data, type, row) {
+                    const recordId = row.id;
+                    const editUrl = `/data/edit/${urlModelName}/${recordId}/`;
+                    const deleteUrl = `/data/delete/${urlModelName}/${recordId}/`;
+
+                    return `
+                        <a href="${editUrl}" class="action-icon-btn" title="Edit Record">✏️</a>
+                        <button type="button" class="action-icon-btn delete-btn" data-id="${recordId}" data-model="${urlModelName}" title="Delete Record">🗑️</button>
+                    `;
+                }
+            });
+
             if ($.fn.DataTable.isDataTable('#dataTable')) {
                 $('#dataTable').DataTable().destroy();
             }
 
-            $('#dataTable').DataTable({
+            const dataTable = $('#dataTable').DataTable({
                 data: data,
                 columns: columnDefs,
-                // DataTables features
                 paging: true,
-                searching: true, // Enables the search box
+                searching: true,
                 ordering: true,
                 info: true,
                 responsive: true,
                 lengthMenu: [10, 25, 50, 100],
-                // DOM positioning for elements (l: length changing input, f: filtering input, r: processing display, t: table, i: table information, p: pagination, B: buttons)
-                dom: 'lfrtipB',
+                dom: 'lBfrtip',
                 buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5',
-                    'pdfHtml5',
-                    'print'
-                ]
+                    { extend: 'copyHtml5', className: 'btn-outline-dark' },
+                    { extend: 'excelHtml5', className: 'btn-outline-dark' },
+                    { extend: 'csvHtml5', className: 'btn-outline-dark' },
+                    { extend: 'pdfHtml5', className: 'btn-outline-dark' },
+                    { extend: 'print', className: 'btn-outline-dark' },
+                    { extend: 'colvis', className: 'btn-outline-dark', text: 'Toggle Columns' }
+                ],
+                initComplete: function () {
+                    // Apply the search to each column
+                    this.api().columns().every(function () {
+                        const that = this;
+                        const columnIndex = this.index();
+
+                        if (columnIndex < (columnDefs.length - 1)) { // Exclude the last column (Actions)
+                            $('input.column-filter', this.footer()).on('keyup change clear', function () {
+                                if (that.search() !== this.value) {
+                                    that.search(this.value).draw();
+                                }
+                            });
+                        }
+                    });
+
+                    // Styling for DataTables buttons
+                    $('.dt-buttons .btn').addClass('btn-sm'); // Make buttons smaller
+                }
+            });
+
+            // Handle Delete Button Click (using event delegation for dynamically added buttons)
+            $('#dataTable tbody').on('click', '.delete-btn', function() {
+                const recordId = $(this).data('id');
+                const modelName = $(this).data('model');
+                const rowElement = $(this).closest('tr');
+
+                if (confirm(`Are you sure you want to delete this record (ID: ${recordId})? This action cannot be undone.`)) {
+                    $.ajax({
+                        url: `/data/delete/${modelName}/${recordId}/`,
+                        type: 'POST',
+                        headers: {
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        success: function(response) {
+                            if (response.status === 'success') {
+                                dataTable.row(rowElement).remove().draw();
+                                alert('Record deleted successfully!');
+                            } else {
+                                alert('Error deleting record: ' + response.message);
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            alert('AJAX error: Could not delete record. ' + xhr.responseText);
+                            console.error("AJAX Error:", status, error, xhr.responseText);
+                        }
+                    });
+                }
             });
         });
     </script>
-
-</body>
-</html>
+{% endblock %}

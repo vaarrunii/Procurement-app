@@ -3,139 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Procurement Analytics{% endblock %}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            @apply bg-gray-100;
-        }
-        /* DataTables CSS */
-        @import url('https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css');
-        @import url('https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css');
+    <title>{% block title %}Procurement App{% endblock %}</title>
 
-        /* Custom styles for rounded corners and shadows, etc. */
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom Styles for Professional Look */
+        body {
+            padding-top: 70px; /* Adjust based on navbar height */
+            padding-bottom: 20px;
+            font-family: 'Inter', sans-serif; /* Apply Inter font */
+            background-color: #f8f9fa; /* Light grey background for a softer feel */
+            color: #343a40; /* Dark grey text for readability */
+        }
+        .container-fluid {
+            margin-top: 20px;
+        }
         .card {
-            @apply bg-white rounded-lg shadow-md p-6;
+            border: none; /* Remove default card border */
+            border-radius: 0.75rem; /* More rounded corners */
+            overflow: hidden; /* Ensures content respects border-radius */
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
         }
-        .btn {
-            @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+        .card:hover {
+            transform: translateY(-5px); /* Lift card on hover */
         }
-        .btn-secondary {
-            @apply bg-gray-600 hover:bg-gray-700;
+        .card-header {
+            border-bottom: none; /* Remove header border */
+            font-weight: 600; /* Slightly bolder header font */
+            padding: 1rem 1.25rem; /* More padding for header */
         }
-        table.dataTable thead th {
-            @apply bg-gray-200 text-gray-700 font-semibold text-left p-3;
+        .card-body {
+            padding: 1.5rem; /* More padding for body */
         }
-        table.dataTable tbody td {
-            @apply p-3 border-b border-gray-200;
+        .jumbotron { /* Custom class for the home page hero section */
+            background-color: #e9ecef; /* Lighter grey for jumbotron */
+            border-radius: 0.75rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            padding: 4rem 2rem;
         }
-        table.dataTable.no-footer {
-            border-bottom: 1px solid #e2e8f0; /* Tailwind gray-200 equivalent */
+        .jumbotron .display-4 {
+            font-weight: 600; /* Bolder heading */
+            color: #212529; /* Darker heading color */
         }
-        div.dataTables_wrapper div.dataTables_filter input {
-            @apply rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+        .dt-buttons .btn {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 0.375rem; /* Consistent button rounding */
         }
-        div.dataTables_wrapper div.dataTables_length select {
-            @apply rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+
+        /* Override bright button defaults for action icons */
+        .action-icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem; /* Larger emoji size */
+            padding: 0.25rem 0.5rem; /* Small padding */
+            line-height: 1; /* Align text better */
+            transition: transform 0.1s ease-in-out;
         }
-        .dataTables_info {
-            @apply text-sm text-gray-600 mt-2;
+        .action-icon-btn:hover {
+            transform: scale(1.1);
         }
-        .dataTables_paginate .paginate_button {
-            @apply px-3 py-1 mx-1 border border-gray-300 rounded-md bg-white hover:bg-gray-50;
+        .action-icon-btn:focus {
+            outline: none;
+            box-shadow: none;
         }
-        .dataTables_paginate .paginate_button.current {
-            @apply bg-indigo-600 text-white border-indigo-600;
+
+        /* Specific text colors for analytics */
+        .text-success-alt { color: #28a745 !important; } /* Standard success */
+        .text-danger-alt { color: #dc3545 !important; }   /* Standard danger */
+        .text-primary-alt { color: #007bff !important; }  /* Standard primary */
+        .text-info-alt { color: #17a2b8 !important; }     /* Standard info */
+
+        /* Navbar active link style - subtle */
+        .navbar-nav .nav-link.active {
+            font-weight: 500;
+            color: #ffffff !important; /* White for active link on dark navbar */
+            border-bottom: 2px solid #007bff; /* Subtle blue underline */
+            padding-bottom: 6px; /* Adjust padding for underline */
         }
-        .dataTables_wrapper .dt-buttons {
-            /* This class is for DataTables' built-in buttons, which we are not using directly for CSV */
-            @apply mb-4;
+
+        /* DataTables filter inputs */
+        .column-filter {
+            border-radius: 0.3rem; /* Consistent rounding */
+            border: 1px solid #ced4da; /* Default border color */
+        }
+        .dataTables_filter input, .dataTables_length select {
+            border-radius: 0.3rem;
+            border: 1px solid #ced4da;
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen">
-    <nav class="bg-indigo-700 p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="{% url 'home' %}" class="text-white text-2xl font-bold rounded-lg px-3 py-2 hover:bg-indigo-600">Procurement Analytics</a>
-            <div class="space-x-4">
-                {% if user.is_authenticated %}
-                    <a href="{% url 'data_home' %}" class="text-white hover:text-gray-200 rounded-lg px-3 py-2 hover:bg-indigo-600">Data</a>
-                    <a href="{% url 'summary_page' %}" class="text-white hover:text-gray-200 rounded-lg px-3 py-2 hover:bg-indigo-600">Summary</a>
-                    <span class="text-white mr-2">Welcome, {{ user.username }}!</span>
-                    <a href="{% url 'logout' %}" class="btn btn-secondary">Logout</a>
-                {% else %}
-                    <a href="{% url 'login' %}" class="btn btn-secondary">Login</a>
-                {% endif %}
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"> {# Added shadow #}
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="{% url 'data_home' %}">ProcurementApp</a> {# Bolder brand #}
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'data_home' %}active{% endif %}" aria-current="page" href="{% url 'data_home' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownData" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Data Tables
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownData"> {# Dark dropdown #}
+                            <li><a class="dropdown-item {% if 'supplier' in request.path %}active{% endif %}" href="{% url 'supplier_list' %}">Suppliers</a></li>
+                            <li><a class="dropdown-item {% if 'category' in request.path %}active{% endif %}" href="{% url 'category_list' %}">Categories</a></li>
+                            <li><a class="dropdown-item {% if 'purchase-order' in request.path %}active{% endif %}" href="{% url 'purchase_order_list' %}">Purchase Orders</a></li>
+                            <li><a class="dropdown-item {% if 'invoice' in request.path %}active{% endif %}" href="{% url 'invoice_list' %}">Invoices</a></li>
+                            <li><a class="dropdown-item {% if 'spend-entry' in request.path %}active{% endif %}" href="{% url 'spend_entry_list' %}">Spend Entries</a></li>
+                            <li><a class="dropdown-item {% if 'supplier-product-pricing' in request.path %}active{% endif %}" href="{% url 'supplier_product_pricing_list' %}">Supplier Product Pricing</a></li>
+                            <li><a class="dropdown-item {% if 'supplier-contract' in request.path %}active{% endif %}" href="{% url 'supplier_contract_list' %}">Supplier Contracts</a></li>
+                            <li><a class="dropdown-item {% if 'supplier-discount' in request.path %}active{% endif %}" href="{% url 'supplier_discount_list' %}">Supplier Discounts</a></li>
+                            <li><a class="dropdown-item {% if 'alternate-supplier' in request.path %}active{% endif %}" href="{% url 'alternate_supplier_list' %}">Alternate Suppliers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.resolver_match.url_name == 'summary_page' %}active{% endif %}" href="{% url 'summary_page' %}">Analytics Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto p-8">
+    <div class="container-fluid">
         {% block content %}
         {% endblock %}
-    </main>
+    </div>
 
-    <footer class="bg-gray-800 text-white p-4 mt-8">
-        <div class="container mx-auto text-center text-sm">
-            &copy; 2025 Procurement Analytics. All rights reserved.
-        </div>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> {# For Excel export (if using DT's native) #}
-    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-    <script>
-        // Custom function to handle CSV export
-        function exportTableToCSV(tableId, filename) {
-            const table = $('#' + tableId).DataTable();
-            let csv = [];
-            let header = [];
-
-            // Get table headers (assuming they are in thead th)
-            $('#' + tableId + ' thead th').each(function() {
-                header.push($(this).text().trim());
-            });
-            csv.push(header.join(','));
-
-            // Get table data from DataTables' internal data for all rows (visible or not)
-            table.rows().every(function() {
-                let rowData = this.data();
-                let row = [];
-                for (let i = 0; i < rowData.length; i++) {
-                    let cellValue = rowData[i];
-                    // Handle null/undefined values
-                    if (cellValue === null || typeof cellValue === 'undefined') {
-                        cellValue = '';
-                    } else {
-                        cellValue = String(cellValue); // Ensure it's a string
-                    }
-
-                    // Escape double quotes by doubling them, then wrap in quotes if contains comma or newline
-                    let cell = cellValue.replace(/"/g, '""');
-                    if (cell.includes(',') || cell.includes('\n')) {
-                        cell = `"${cell}"`;
-                    }
-                    row.push(cell);
-                }
-                csv.push(row.join(','));
-            });
-
-            // Create a Blob and download it
-            const csvFile = new Blob([csv.join('\n')], { type: 'text/csv;charset=utf-8;' });
-            const downloadLink = document.createElement("a");
-            downloadLink.href = URL.createObjectURL(csvFile);
-            downloadLink.download = filename + ".csv";
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-        }
-    </script>
     {% block extra_js %}
     {% endblock %}
+
 </body>
 </html>
